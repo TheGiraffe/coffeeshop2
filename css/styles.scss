@@ -1,0 +1,213 @@
+$color-aquamarine: #45ffc1;
+$color-green: #7fff7c;
+$color-blue: #3fe9ff;
+$color-lightblue: #76ffed;
+$color-red: #ff3f3f;
+$color-orange: #ffa53f;
+$color-yellow: #fff23f;
+$color-gold: #ffdd35;
+$color-lavender: #df88ff;
+$i-outline: 0.05rem;
+$i-outline-spread: 0.25rem;
+$i-outline-color: $color-gold;
+$gold-shadow: $i-outline-color ($i-outline*(-1)) $i-outline $i-outline-spread, $i-outline-color $i-outline ($i-outline*(-1)) $i-outline-spread, $i-outline-color ($i-outline*(-1)) ($i-outline*(-1)) $i-outline-spread, $i-outline-color $i-outline $i-outline $i-outline-spread;
+$cloud-color: rgba(255,255,255,0.5);
+$main-color: rgba(255,255,255,0.8);
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-size: 1.15vw;
+    background: linear-gradient(to top, $color-green 0% 10% ,$color-lightblue 50% 100%);
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header{
+    background-color: $color-aquamarine;
+    background-image: url("../img/headerimg.png");
+    background-size: cover;
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: $color-blue solid 0.4rem;
+}
+
+#go-home{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@keyframes rotate-wheel{
+    0% {transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+
+#go-home i{
+    font-size: 2.8rem;
+    color: black;
+    text-shadow: $gold-shadow;
+    animation-name: rotate-wheel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#go-home:hover i{
+    transition: 800ms;
+    color: $color-orange;
+    animation-play-state: paused;
+}
+
+#go-home:hover{
+    font-weight: 800;
+    transition: 800ms;
+    text-shadow: $gold-shadow;
+    cursor: pointer;
+}
+
+#menuButton{
+    font-weight: 500;
+    background-color: $color-orange;
+    border: solid $color-blue 0.5rem;
+
+}
+
+#menuButton:hover{
+    font-weight: 800;
+    background-color: $color-gold;
+}
+
+.btn span i{
+    opacity: 0;
+    font-size: 0;
+}
+
+#menuButton:hover span i{
+    font-size: 1.2rem;
+}
+
+.btn:hover span i{
+    opacity: 1;
+    font-size: 1rem;
+    transition: 100ms;
+}
+.navbar{
+    background-color: $color-aquamarine;
+    border-bottom: $color-blue solid 0.4rem;
+}
+
+
+.nav-item{
+    background-color: $color-yellow;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0;
+    border: $color-blue solid 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-family: "Playwrite ES", cursive;
+    padding-right: 0.4rem;
+}
+.nav-item:hover{
+    cursor: pointer;
+    background-color: $color-green;
+    border: $color-blue solid 0.3rem;
+}
+.btn.active{
+    background-color: $color-lavender;
+    border: $color-blue solid 0.3rem;
+}
+
+.cloud-background{
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes cloud-animate-right{
+    0% {transform: translate(0)}
+    50%{transform: translate(20vw);}
+    100%{transform: translate(0)}
+}
+@keyframes cloud-animate-left{
+    0% {transform: translate(0)}
+    50%{transform: translate(-20vw);}
+    100%{transform: translate(0)}
+}
+
+.cloud{
+    position: absolute;
+    color: $cloud-color;
+    display: inline-block;
+    font-size: 6rem;
+}
+
+.cloud-left{
+    animation-name: cloud-animate-right;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-right{
+    animation-name: cloud-animate-left;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#cloud1{
+    left: 5vw;
+    top: 0vw;
+}
+#cloud2{
+    left: 75vw;
+    top: 6vw;
+    animation-delay: 3s;
+}
+#cloud3{
+    left: 20vw;
+    top: 12vw;
+    animation-delay: 5s;
+}
+#cloud4{
+    left: 85vw;
+    top: 16vw;
+    animation-delay: 10s;
+}
+#cloud5{
+    left: 35vw;
+    top: 23vw;
+    animation-delay: 15s;
+}
+main{
+    z-index: 5;
+    background-color: $main-color;
+}
+
+img{
+    display: inline-block;
+}
+h2{
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 1rem;
+    text-shadow: $gold-shadow;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+}
