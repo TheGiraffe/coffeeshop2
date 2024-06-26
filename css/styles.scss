@@ -21,6 +21,26 @@ html{
     width: 100%;
 }
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    body{
+        font-size: 2vw !important;
+    }
+
+    #go-home{
+        font-size: 1.5rem !important;
+    }
+    #go-home i{
+        font-size: 1.5rem !important;
+    }
+    .cloud{
+        font-size: 3rem !important;
+    }
+    #homeCarousel{
+        margin-bottom: 1rem;
+    }
+}
+
 body{
     font-size: 1.15vw;
     background: linear-gradient(to top, $color-green 0% 10% ,$color-lightblue 50% 100%);
