@@ -373,3 +373,12 @@ footer li a:hover{
     padding-right: 1rem;
     transition: 250ms;
 }
+
+#menu-closer{
+    transition: 250ms;
+}
+
+#menu-closer:hover{
+    transform: rotateZ(180deg);
+    transition: 500ms;
+}
