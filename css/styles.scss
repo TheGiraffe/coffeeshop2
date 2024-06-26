@@ -16,11 +16,6 @@ $main-color: rgba(255,255,255,0.7);
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-html{
-    height: 150%;
-    width: 100%;
-}
-
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     body{
@@ -36,9 +31,17 @@ html{
     .cloud{
         font-size: 3rem !important;
     }
-    #homeCarousel{
-        margin-bottom: 1rem;
+    .event-card{
+        width: 45% !important;
     }
+    .footer{
+        font-size: 0.5rem !important;
+    }
+}
+
+html{
+    min-height: 100%;
+    position: relative;
 }
 
 body{
@@ -49,6 +52,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    height: 100%;
+    width: 100%;
 }
 
 header{
@@ -99,17 +104,20 @@ header{
     font-weight: 500;
     background-color: $color-lavender;
     border: solid $color-blue 0.5rem;
+    transition: 250ms;
 
 }
 
 #menuButton:hover{
     font-weight: 800;
     background-color: $color-gold;
+    transition: 250ms;
 }
 
 .btn span i{
     opacity: 0;
     font-size: 0;
+    transition: 250ms;
 }
 
 #menuButton:hover span i{
@@ -119,7 +127,7 @@ header{
 .btn:hover span i{
     opacity: 1;
     font-size: 1rem;
-    transition: 100ms;
+    transition: 250ms;
 }
 .navbar{
     background-color: $color-aquamarine;
@@ -130,7 +138,15 @@ header{
     font-size: 2rem;
     margin: none;
     text-shadow: $gold-shadow;
+    transition: 2s;
 }
+
+.navbar-brand:hover{
+    color: $color-orange;
+    transform: rotateZ(180deg);
+    transition: 4s;
+}
+
 .navbar{
     padding: 0;
 }
@@ -145,11 +161,13 @@ header{
     font-weight: 800;
     font-family: "Playwrite ES", cursive;
     padding-right: 0.4rem;
+    transition: 250ms;
 }
 .nav-item:hover{
     cursor: pointer;
     background-color: $color-green;
     border: $color-blue solid 0.3rem;
+    transition: 250ms;
 }
 .btn.active{
     background-color: $color-orange;
@@ -196,24 +214,24 @@ header{
 }
 
 #cloud1{
-    left: 5vw;
+    left: 2vw;
     top: 0vw;
     animation-delay: 0s;
 }
 #cloud2{
     left: 75vw;
     top: 6vw;
-    animation-delay: 10s;
+    animation-delay: 4s;
 }
 #cloud3{
     left: 20vw;
     top: 12vw;
-    animation-delay: 15s;
+    animation-delay: 6s;
 }
 #cloud4{
-    left: 85vw;
+    left: 87vw;
     top: 16vw;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 #cloud5{
     left: 35vw;
@@ -223,6 +241,7 @@ header{
 main{
     z-index: 5;
     background-color: $main-color;
+    margin-bottom: 1rem;
 }
 
 img{
@@ -253,6 +272,10 @@ h3{
     margin: 1rem;
 }
 
+#upcoming-events{
+    margin-top: 2rem;
+}
+
 .event-card{
     width:22%;
     display: inline-block;
@@ -273,11 +296,16 @@ h3{
     font-style: normal;
     margin: 1rem;
     border: $color-blue solid 0.3rem;
+    transition: 250ms;
 }
 
 .ext-link-btn:hover{
     background-color: $color-gold;
     border: $color-blue solid 0.3rem;
+    transition: 250ms;
+}
+.ext-link-btn:hover span i{
+    font-size: 1.25rem;
 }
 
 #menu-title{
@@ -312,4 +340,36 @@ h3{
 
 #disclaimer{
     font-size: 0.75rem;
+}
+
+footer{
+    border-top: $color-blue solid 0.3rem;
+    padding: 1rem;
+    background-color: $color-lightblue;
+    font-size: 0.8rem;
+}
+
+footer ul{
+    margin-bottom: 0;
+}
+
+footer li{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+footer li a{
+    text-decoration: none;
+    color: black;
+    transition: 250ms;
+}
+
+footer li a:hover{
+    border-bottom: solid $color-gold;
+    background-color: $color-blue;
+    border-radius: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 250ms;
 }
