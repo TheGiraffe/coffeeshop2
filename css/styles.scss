@@ -12,7 +12,7 @@ $i-outline-spread: 0.25rem;
 $i-outline-color: $color-gold;
 $gold-shadow: $i-outline-color ($i-outline*(-1)) $i-outline $i-outline-spread, $i-outline-color $i-outline ($i-outline*(-1)) $i-outline-spread, $i-outline-color ($i-outline*(-1)) ($i-outline*(-1)) $i-outline-spread, $i-outline-color $i-outline $i-outline $i-outline-spread;
 $cloud-color: rgba(255,255,255,0.5);
-$main-color: rgba(255,255,255,0.8);
+$main-color: rgba(255,255,255,0.7);
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -258,4 +258,38 @@ h3{
 .ext-link-btn:hover{
     background-color: $color-gold;
     border: $color-blue solid 0.3rem;
+}
+
+#menu-title{
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#menu-header{
+    background-color: $color-lavender;
+}
+
+.menu-item{
+    font-size: 0.8rem;
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-desc{
+    font-size: 0.6rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.menu-img{
+    margin-bottom: 1rem;
+}
+
+#disclaimer{
+    font-size: 0.75rem;
 }

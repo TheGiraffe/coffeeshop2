@@ -17,7 +17,7 @@
             <div class="container container-fluid">
                 <div class="row py-3">
                     <div class="col">
-                        <h1 id="go-home"><i class="fas fa-dharmachakra"></i> Personal Peace Cafe</h1>
+                        <h1 id="go-home"><i class="fas fa-dharmachakra"></i> Personal Peace Cafe <span lang="ko">개인평화카페</span></h1>
                     </div>
                     <div class="col col-md-4 col-xl-2 ms-3">
                         <button id="menuButton" class="btn btn-info text-nowrap" data-bs-toggle="modal" data-bs-target="#menuModal">
@@ -40,6 +40,7 @@
                         <li class="nav-item btn active"><a class="nav-link" aria-current="page" href="#"><span><i class="fas fa-yin-yang"></i> </span>About </a></li>
                         <li class="nav-item btn"><a class="nav-link" href="#"><span><i class="fas fa-dove"></i> </span>Contact Us </a></li>
                     </ul>
+                    <span id="disclaimer">Disclaimer: This is a concept website of a cafe, not a real cafe. The Korean / Hangul on this website may not be accurate.</span>
                 </div>
             </div>
         </nav>
@@ -50,30 +51,292 @@
             <div class="cloud cloud-right" id="cloud4"><i class="fa-solid fa-cloud"></i></div>
             <div class="cloud cloud-left" id="cloud5"><i class="fa-solid fa-cloud"></i></div>
         </div>
+
+        <div class="modal fade modal-lg" id="menuModal">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <div class="modal-header text-center" id="menu-header">
+                        <div class="modal-title w-100" id="menu-title">Our Menu</div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        All of our menu items are on a sliding scale, where you pay what you can.
+                        If that is $0, that is completely alright.
+                        </p>
+                        <p>
+                        Suggested Price ranges are provided below.
+                        If you are feeling very generous and want to donate to cover the costs of us providing items for free for those who need it, tell us that you would like to Pay it Forward and we will charge the Pay it Forward price. Mahalo nui loa for your support!
+                        </p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Beverages</th>
+                                    <th scope="col">Suggested Price</th>
+                                    <th scope="col">Pay it Forward</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="menu-item">
+                                        Korean Barley Tea <span lang="ko">보리차</span> <i>(Bori-cha)</i>
+                                        <div class="menu-desc">
+                                            This beloved traditional tea can be enjoyed hot or cold, and has wonderful health benefits - including as an antacid and to help with stomach cramps.
+                                            We recommend drinking it every day!
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12 & 16 oz: $0-$1
+                                    </td>
+                                    <td>$2</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Korean Green Tea <span lang="ko">녹차</span> <i>(Nokcha / Nogcha)</i>
+                                        <div class="menu-desc">
+                                            Enjoy this wonderful Korean green tea, rich with antioxidants. We have loose-leaf Ujeon (<span lang="ko">우전</span>), Sejak (<span lang="ko">세작</span>), Joongjak (<span lang="ko">중작</span>) green teas, as well as both loose leaf and tea bags of Daejak (<span lang="ko">대작</span>) green tea.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        Cup: $0-$2
+                                        <br>
+                                        Pot: $4-$6
+                                    </td>
+                                    <td>Cup: $4 <br> Pot: $12</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Korean Red Ginseng Tea <span lang="ko">홍삼차</span> <i>(Hongsam-cha)</i>
+                                        <div class="menu-desc">
+                                            This tea is known in Korea to help with helping brain functioning, strengthening your immune system, boosting energy, and decreasing stress.
+                                            Halmonis (grandma <span lang="ko">할머니</span>) and Harabojis (grandpa <span lang="ko">할아버지</span>) believe that it'll make you live a very long life!
+                                        </div>
+                                    </td>
+                                    <td>Cup: $0-$4</td>
+                                    <td>$8</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Aloha Tea
+                                        <div class="menu-desc">
+                                            Mix of hibiscus, lilikoi, mango, and pikake tea, and Love. 
+                                            Optionally, you can add green tea, black tea, or white tea leaves to steep alongside it.
+                                            While drinking, reflect on the <a href="https://www.hawaii.edu/uhwo/clear/home/lawaloha.html" target="_blank">Aloha spirit</a> and send good feelings and warmest regards to others.
+                                            This tea tastes best when it is shared. &hearts;
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$2 <br> 16oz: $1-$3 <br> Pot: $4-$6
+                                    </td>
+                                    <td>12 or 16 oz: $5 <br> Pot: $12 </td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Gratitude Tea
+                                        <div class="menu-desc">
+                                            This citrus tea contains lemon, orange, grapefruit, and yuja (also known as yuzu), as well as ginger, elderflower, honey, and seeds to cultivate the spirit of Gratitude. 
+                                            Optionally, you can add green tea, black tea, or white tea leaves to steep alongside it.
+                                            While drinking, reflect upon all of the things in your life that you are grateful for. 
+                                            If you are feeling inspired, feel free to journal, make a list, or write a letter of gratitude to life itself, the universe, or your higher spiritual power.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$2 <br> 16oz: $1-$3
+                                    </td>
+                                    <td>$5</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Forgiveness Tea
+                                        <div class="menu-desc">
+                                            This tea contains cinnamon, tulsi (holy basil), rose petals, rosemary, cardamom, and permission to Forgive.
+                                            Optionally, you can add green tea, black tea, or white tea leaves to steep alongside it.
+                                            While you are drinking this tea, reflect on forgiveness, and set yourself free by forgiving those who you feel it is time to forgive.
+                                            Remember that forgiveness is for you, so that you can let go and move forward.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$2 <br> 16oz: $1-$3
+                                    </td>
+                                    <td>$5</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Positivi-Tea
+                                        <div class="menu-desc">
+                                            This tea contains lemon balm, lavender, mint, tangerine, honey, and Positive Energy.
+                                            Optionally, you can add green tea, black tea, or white tea leaves to steep alongside it.
+                                            While drinking this tea, think many positive thoughts, and this will activate the magic.
+                                            We hope this tea brightens your day.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$2 <br> 16oz: $1-$3
+                                    </td>
+                                    <td>$5</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Rest Tea
+                                        <div class="menu-desc">
+                                            This tea contains lavender, chamomile, lemon balm, rose, and permission for Deep Rest.
+                                            Optionally, you can add Rooibos, which is non-caffeinated, to steep alongside it.
+                                            Let this tea encourage you to Rest, in whichever ways are most needed for you. 
+                                            Whether that is resting your body or your mind, taking a social rest or rest from overwhelming stimuli, taking the time to feel your emotions, recharge creatively, or reconnect spiritually, please give yourself permission to rest.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$2 <br> 16oz: $1-$3
+                                    </td>
+                                    <td>$5</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Hawaiian Coffee
+                                        <div class="menu-desc">
+                                            Enjoy this wonderful Hawaiian coffee, choosing from either Maui or Kona coffee. 
+                                            Don't worry, both are delicious. 
+                                            Both Maui and Kona coffee have original and chocolate macadamia flavours that you can choose from. 
+                                            Enjoy with milk (regular, soya, oat), sugar or honey, cinnamon, syrups (vanilla, raspberry, chocolate, blackberry, hazelnut), or by itself!
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$3 <br> 16oz: $1-$5
+                                    </td>
+                                    <td>$6</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Mindful Coffee
+                                        <div class="menu-desc">
+                                            Our mindful coffee blend combines wonderful Hawaiian coffee with chicory root.
+                                            For the Hawaiian coffee, you can choose Maui or Kona coffee - both are delicious.
+                                            Chicory root is non-caffeinated, and helps extend the taste of the coffee.
+                                            We can also create a non-caffeinated version for you with either decaffeinated coffee and chicory.
+                                            Enjoy with milk (regular, soya, oat), sugar or honey, cinnamon, syrups (vanilla, raspberry, chocolate, blackberry, hazelnut), or by itself!
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$4 <br> 16oz: $1-$6
+                                    </td>
+                                    <td>$7</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        Chicory Coffee
+                                        <div class="menu-desc">
+                                            Enjoy this delicious, non-caffeinated coffee made from the chicory root. 
+                                            Enjoy with milk (regular, soya, oat), sugar or honey, cinnamon, syrups (vanilla, raspberry, chocolate, blackberry, hazelnut), or by itself!
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12oz: $0-$3 <br> 16oz: $1-$5
+                                    </td>
+                                    <td>$6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <img class="thumbnail w-25 rounded img-fluid" src="img/slider-images/3.png" alt="Cup of green Tea"/>
+                        <img class="thumbnail w-25 rounded img-fluid" src="img/food/mindful-coffee.png" alt="Cup of coffee, with a napkin under it that says Be Mindful, and a pen next to that." />
+                        <img class="thumbnail w-25 rounded img-fluid" src="img/food/21.png" alt="Plates of Gimbap, with someone holding a gimbap roll with chopsticks." />
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Food Items</th>
+                                    <th scope="col">Suggested Price</th>
+                                    <th scope="col">Pay it Forward</th>
+                                </tr>
+                            </thead>
+                            <tbody><tr>
+                                    <td class="menu-item">
+                                        <img class="thumbnail w-50 rounded img-fluid menu-img" src="img/food/22.png" alt="A wooden plate with two rows of gimbap." />
+                                        <br>
+                                        Kimbap / Gimbap <span lang="ko">김밥</span>
+                                        <div class="menu-desc">
+                                            Enjoy these delicious Korean seaweed rice rolls. 
+                                            This dish contains white or brown rice, tofu or meat (beef, chicken, or luncheon meat), egg (optional), spinach, carrots, cucumber, danmuji 단무 (yellow pickled radish), and imitation crab (optional, not vegetarian), all wrapped up in roasted seaweed.
+                                            We can add sesame seeds on top, or leave them out. 
+                                            The dipping sauce contains soy sauce, sesame oil, sesame seeds, and spring onion - however, some of these items can be removed or substituted. 
+                                            Optionally, you can add lemon to the soy sauce as well to make it tangy like ponzu, or we also have ponzu soy sauce too.
+                                            The regular soy sauce can also be replaced with gluten free soy sauce.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $0-$6
+                                    </td>
+                                    <td>
+                                        $10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        <img class="thumbnail w-50 rounded img-fluid menu-img" src="img/food/23.png" alt="A picture of a Buddha bowl that has various vegetables, fruits, and sauces, as well as grilled chicken in it."/>
+                                        <br>
+                                        Build Your Own Buddha Bowl
+                                        <div class="menu-desc">
+                                            Build your own Buddha Bowl, in any way you'd like! You can add as many as you'd like of the following: Fresh Cherry Tomatoes, Sun Dried Tomatoes, Olives, Marinated Artichoke Hearts, Hearts of Palm, Capers, Cucumbers, Carrots, Corn, Jalepenos, Arugula, Lettuce, Salad Mix, Red Cabbage, Napa Cabbage, Raddish, Danmuji 단무 (yellow pickled radish), Kimchi, Avocado, Lemon, Hummus, Guacamole, Salsa, Baba Ghanoush, Tzatziki, Soy Sauce, Ponzu, Harissa, Rice, Quinoa, Roast Tofu, Roast Chicken, Canned Tuna, Microgreens, Bean Sprouts, Pickled Lemon, Lebanese Pickled Turnips, Pita Bread (on the side), Cilantro, Pine Nuts, Chickpeas, Kidney Beans, Roasted Beets, Roasted Sweet Potato.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $0-$10
+                                    </td>
+                                    <td>
+                                        $16
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-item">
+                                        <img class="thumbnail w-50 rounded img-fluid menu-img" src="img/food/24.png" alt="A picture of fried rice that has cilantro and tomato in it, and the rice is slightly orange in color due to spices / seasonings."/>
+                                        <br>
+                                        Veggie Fried Rice Bowl
+                                        <div class="menu-desc">
+                                            Enjoy this simple veggie fried rice bowl, which has egg, cilantro, tomato, peas, mushrooms, and carrots. Seasoned with turmeric, cumin, lemon, lime, and/or soy sauce.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $0-$5
+                                    </td>
+                                    <td>
+                                        $8
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        If this menu looks good to you, please visit us today!
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <main class="container">
             <section class="row row-content">
                 <div class="col">
                     <h2 class="text-center">About Personal Peace Cafe</h2>
                     <div class="text-center">
                         <p>
-                            This cafe is imagined as a place where you can reconnect with yourself.
+                            This cafe is imagined as a place where you can reconnect with yourself. 
+                            You are also welcome to connect with others, to enjoy this space with family and friends, and to meet new friends as well if you and them do not prefer solitude.
                         </p>
                         <p>
                             We welcome people of all faiths, cultures, and backgrounds. 
-                            We hope you have a wonderful, peaceful time here.
+                            We welcome people looking for connection with others, people looking for quiet and connection with themself, and everyone in-between. 
+                            We hope you have a wonderful, peaceful time here, and that you find what you are looking for.
                         </p>
                         <p>
                             For Korean-American Buddhists raised in the West, this space may provide a familiarity and help you feel more connected to Korean culture and heritage. 
                             For everyone else, in addition to the environment of calm and restfulness, we hope you enjoy learning more about Korean culture and Buddhism through exploring this space.
                         </p>
-                        <img class="img-thumbnail img-fluid" width="30%" src="img/slider-images/12.png" />
+                        <img class="img-thumbnail img-fluid" width="30%" src="img/slider-images/12.png" alt="There is a pot of tea in foreground, however, the camera is mainly focused on a statue of Buddha in background"/>
                         </div>
 
                         
                         <div class="text-center mt-5">
                         <h2>About This Website</h2>
                         <p>
-                            The content of this website was inspired by a Personal Peace class that I am taking at University of Hawai'i at Mānoa.
+                            I was inspired to make this website while taking a Personal Peace class at University of Hawai'i at Mānoa.
                             You can find out more about this class <a href="https://urpersonalpeace.wixsite.com/pace315" target="_blank">here</a>.
                             The design of this website was inspired by my visit to Mu-Ryang-Sa Temple <span lang="ko">무량사</span> in Honolulu, Hawai'i. 
                             I wanted to try to incorporate in some of the aquamarines and teals, greens and blues, and multicolored accents. 
